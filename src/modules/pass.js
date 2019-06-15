@@ -319,7 +319,7 @@ PassFF.Pass = (function () {
             log.error('PassFF failed to execute the host app', ex);
             PassFF.Menu.state.lastResult = {
               'timestamp': new Date(),
-              'stderr': "PassFF failed to execute the host app",
+              'stderr': ex + " <- PassFF failed to execute the host app",
               'exitCode': -1,
               'command': command
             };
